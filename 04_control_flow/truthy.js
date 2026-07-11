@@ -7,7 +7,6 @@ if (userEmail) {
 }
 
 // falsy values
-
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
 //truthy values
@@ -17,26 +16,24 @@ if (userEmail) {
 //     console.log("Array is empty");
 // }
 
-const emptyObj = {}
+// const emptyObj = {}
 
-if (Object.keys(emptyObj).length === 0) {
-    console.log("Object is empty");
-}
+// if (Object.keys(emptyObj).length === 0) {
+//     console.log("Object is empty");
+// }
 
-// Nullish Coalescing Operator (??): null undefined
+// Nullish Coalescing Operator (??):
+// The Nullish Coalescing Operator (??) returns its right side only if the left side is null or undefined. Unlike (||), it preserves valid falsy values like 0, "", and false.
 
 let val1;
-// val1 = 5 ?? 10
-// val1 = null ?? 10
-// val1 = undefined ?? 15
-val1 = null ?? 10 ?? 20
-
-
+// val1 = 5 ?? 10   // 5
+// val1 = null ?? 10    // 10
+// val1 = undefined ?? 15    // 15
+val1 = null ?? 10 ?? 20     // 10
 
 console.log(val1);
 
 // Terniary Operator
-
 // condition ? true : false
 
 const iceTeaPrice = 100

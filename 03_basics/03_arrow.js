@@ -4,7 +4,7 @@ const user = {
 
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
-        console.log(this);
+        // console.log(this);
     }
 
 }
@@ -15,9 +15,9 @@ const user = {
 
 // console.log(this);
 
-// function chai(){
-//     let username = "hitesh"
-//     console.log(this.username);
+// function chai() {
+//   let username = "hitesh"
+//   console.log(this.username);
 // }
 
 // chai()
@@ -27,28 +27,37 @@ const user = {
 //     console.log(this.username);
 // }
 
-const chai =  () => {
-    let username = "hitesh"
-    console.log(this);
-}
+// chai()
 
+// const chai =  () => {
+//     let username = "hitesh"
+//     console.log(this.username);
+// }
 
 // chai()
 
+
+// Basic arrow function
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
 // }
+// console.log(addTwo(3, 4))
 
-// const addTwo = (num1, num2) =>  num1 + num2
+// Implicit Return
+// const addTwo = (num1, num2) => num1 + num2
+// console.log(addTwo(3, 4))
 
-// const addTwo = (num1, num2) => ( num1 + num2 )
 
+// const addTwo = (num1, num2) => (num1 + num2)
+// console.log(addTwo(3, 4))
+
+// Curly braces - "return" is required,
+// Parenthesis - "return" is not required.
+
+// Return object in Arrow function - Wrap object in parenthesis to return the object
 const addTwo = (num1, num2) => ({username: "hitesh"})
-
-
 console.log(addTwo(3, 4))
 
 
 // const myArray = [2, 5, 3, 7, 8]
-
 // myArray.forEach()
